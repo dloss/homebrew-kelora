@@ -5,16 +5,16 @@
 class Kelora < Formula
   desc "Command-line log analysis tool with embedded Rhai scripting"
   homepage "https://github.com/dloss/kelora"
-  version "1.4.10"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dloss/kelora/releases/download/v1.4.10/kelora-aarch64-apple-darwin.tar.gz"
-      sha256 "409018677ce04459f600eb8516acc4de98ae3c2bc55650aca4155d7c5f423e0e"
+      url "https://github.com/dloss/kelora/releases/download/v1.5.0/kelora-aarch64-apple-darwin.tar.gz"
+      sha256 "b4a3d1fd25c4d196501d5c41e617f5f453208257840f02923b32e584d08fd157"
     else
-      url "https://github.com/dloss/kelora/releases/download/v1.4.10/kelora-x86_64-apple-darwin.tar.gz"
-      sha256 "0d55367bdbb3df00980244135219ae6b7f6a6a9b952f13a0df128027b42b89e6"
+      url "https://github.com/dloss/kelora/releases/download/v1.5.0/kelora-x86_64-apple-darwin.tar.gz"
+      sha256 "f456f9aabeb3c4270f6c28aef4adec015b45f725d414b124c61277ebfc25d101"
     end
   end
 
@@ -24,7 +24,7 @@ class Kelora < Formula
 
   test do
     # Test basic functionality
-    assert_match "kelora 1.4.10", shell_output("#{bin}/kelora --version")
+    assert_match "kelora 1.5.0", shell_output("#{bin}/kelora --version")
 
     # Test help output
     assert_match "Command-line log analysis", shell_output("#{bin}/kelora -h")
