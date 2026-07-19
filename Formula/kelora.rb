@@ -11,10 +11,10 @@ class Kelora < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dloss/kelora/releases/download/v2.0.1/kelora-aarch64-apple-darwin.tar.gz"
-      sha256 "d6336e778a1725004037f62332eb2dd4caa1061d6fbd7935d03433c08e4ebf97"
+      sha256 "9305ba295cd807331487f0d87d99ad191b96f98d7ccfd64628e1bfa7cb757358"
     else
       url "https://github.com/dloss/kelora/releases/download/v2.0.1/kelora-x86_64-apple-darwin.tar.gz"
-      sha256 "7cfd5b906e27e71d884214e9ebd91a23c0a949b2cb95d3ed35173bc690956203"
+      sha256 "3efc3f32cb91ba21fe096232d2c7104b37e3ec3acb098c9d21f327d889beceb0"
     end
   end
 
